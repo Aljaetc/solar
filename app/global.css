@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
+
+  .bg {
+    background: linear-gradient(359.46deg, #fff2fa .39%, #ddedff 99.47%);
+  }
+
+  .stroke_transparent {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0 0 0 / 30%);
+    color: transparent;
+    -webkit-text-stroke-color: #21212140;
+  }
+
+  .stroke_white {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+  }
+
+  body {
+      --swiper-scrollbar-border-radius: 10px;
+      --swiper-scrollbar-top: 5px;
+      --swiper-scrollbar-bottom: auto;
+      --swiper-scrollbar-left: auto;
+      --swiper-scrollbar-right: 4px;
+      --swiper-scrollbar-sides-offset: 5%;
+      --swiper-scrollbar-bg-color: rgba(224, 123, 28, 0.438);
+      --swiper-scrollbar-drag-bg-color: rgba(252, 216, 15, 0.815);
+      --swiper-scrollbar-size: 6px;
+  }
